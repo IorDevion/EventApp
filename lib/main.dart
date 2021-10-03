@@ -12,11 +12,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SafeArea(
-        child: Scaffold(
-          body: HomeScreen(),
-        ),
-      ),
       routes: routes,
       initialRoute: HomeScreen.routeName,
     );
