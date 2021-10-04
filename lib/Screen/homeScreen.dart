@@ -7,7 +7,7 @@ import '../Controller/categoryController.dart';
 
 //logic
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatelessWidget{
   final GetxCategory _getxCategory = Get.put(GetxCategory());
   static String routeName = "/homeScreen";
 
@@ -26,14 +26,14 @@ class HomeScreen extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(top: getFlexibleHeight(230)),
                     child: ListView.builder(itemBuilder: (BuildContext ctx, index){
-                      final category = _getxCategory.[index];
+                      final category = _getxCategory.categoryItems[index];
                       return Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                           color:primaryColor,
                         ),
                       );
-                    },itemCount:,), 
+                    },itemCount:_getxCategory.categoryItems.length,), 
                     width: double.infinity,
                     padding: EdgeInsets.symmetric(
                         vertical: getFlexibleHeight(20),

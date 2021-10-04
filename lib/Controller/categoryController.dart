@@ -8,8 +8,8 @@ class GetxCategory extends GetxController {
       5,
       (index) =>
           CategoryItem(name: "Product $index", image: "This is an Image")).obs;
-}
 
-List<CategoryItem> get categoryItems {
-  return [..._categoryItem];
+  List<CategoryItem> get categoryItems {
+    return [..._categoryItem];
+  }
 }
